@@ -1,0 +1,17 @@
+fastapi
+google-cloud-vision
+uvicorn
+#io
+pillow
+pybase64
+pydantic
+torchvision
+torch
+tensorflow
+tf_slim
+pycocotools
+tensorflow
+numpy
+matplotlib
+opencv-python==4.3.0.36
+protobuf==3.19.0
