@@ -13,5 +13,6 @@ pycocotools
 tensorflow
 numpy
 matplotlib
-opencv-python==4.3.0.36
+#opencv-python==3.4.13.47 (installed with pip3)
 protobuf==3.19.0
+Flask boto3
