@@ -1,25 +1,20 @@
 import numpy as np
 import os
-import six.moves.urllib as urllib
 import sys
 import tarfile
 import tensorflow as tf
 import pathlib
-import zipfile
-import json
-from google.protobuf.json_format import Parse, ParseDict
 import argparse
 
 from collections import defaultdict
 from io import StringIO
-from matplotlib import pyplot as plt
 import cv2
 from PIL import Image
 from IPython.display import display
 
 from object_detection.utils import ops as utils_ops
 from object_detection.utils import label_map_util
-from object_detection.utils import visualization_utils as vis_util
+#from object_detection.utils import visualization_utils as vis_util
 
 # patch tf1 into `utils.ops`
 utils_ops.tf = tf.compat.v1
@@ -114,8 +109,6 @@ def show_inference(model, image_path, dir=r'/Users/kisaki/Desktop/Kisaki_Persona
 
             if not cv2.imwrite(img_name, im_bgr):
               raise Exception("Could not write image")
-            
-            #cv2_imshow(im_bgr)
 
           else:
             pass
@@ -142,6 +135,9 @@ def main(detection_model = detection_model, TEST_IMAGE_PATHS = TEST_IMAGE_PATHS)
 if __name__ == '__main__':
   main()
   
+# save bounding box result as json file?
+
+
 
 # result = run_inference(TEST_IMAGE_PATHS, model=detection_model)
 # save_results(result)
@@ -151,7 +147,7 @@ if __name__ == '__main__':
 # convert to base64
 
 # use serpa API to upload images to google API
-# use scrapeAI to scrape the first match from google API result
+# use scrapeAI to scrape the first match from google API result (image search)
 # use beautiful soup to scrape price, prodcut name, and brannd
 
 # try this UI with streamlit
