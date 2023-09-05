@@ -36,7 +36,6 @@ def index():
                 ExtraArgs={"ACL": "public-read"},
             )
 
-            # Generate the URL for the uploaded file
             url = f"https://{S3_BUCKET}.s3.{S3_REGION}.amazonaws.com/{file.filename}"
 
             return render_template("index.html", url=url)
