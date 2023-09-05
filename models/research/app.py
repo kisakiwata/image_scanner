@@ -9,6 +9,13 @@ app = Flask(__name__)
 S3_BUCKET = "kiwi-cropped-image"
 S3_REGION = "us-west-1"
 
+# File to store URLs
+URLS_FILE = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/result_urls/uploaded_urls.txt"
+
+def save_url_to_file(url):
+    with open(URLS_FILE, "a") as file:
+        file.write(url + "\n")
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
@@ -37,6 +44,9 @@ def index():
             )
 
             url = f"https://{S3_BUCKET}.s3.{S3_REGION}.amazonaws.com/{file.filename}"
+
+            # Save the URL to the text file
+            save_url_to_file(url)
 
             return render_template("index.html", url=url)
 
