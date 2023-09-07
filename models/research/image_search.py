@@ -2,6 +2,7 @@ from serpapi import GoogleSearch
 import os
 import json
 import datetime
+from dotenv import load_dotenv
 
 
 file_path = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/result_urls/uploaded_urls.txt"
@@ -82,4 +83,4 @@ if __name__ == "__main__":
     with open(json_file_path, "w") as json_file:
         json.dump(results_data, json_file, indent=4, ensure_ascii=False)
 
-    print(f"Top two results have been saved to '{json_file_path}'.")
+    print(f"Top results have been saved to '{json_file_path}'.")

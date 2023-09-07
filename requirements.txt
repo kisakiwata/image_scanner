@@ -17,3 +17,6 @@ matplotlib
 protobuf==3.19.0
 Flask boto3
 google-search-results
+requests
+glob2
+dotenv
