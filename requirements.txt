@@ -16,3 +16,9 @@ matplotlib
 #opencv-python==3.4.13.47 (installed with pip3)
 protobuf==3.19.0
 Flask boto3
+google-search-results
+requests
+glob2
+dotenv
+bs4
+selenium
