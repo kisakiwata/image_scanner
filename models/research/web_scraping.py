@@ -1,17 +1,25 @@
-# come up with the strucuture to filter "source" to credible large supermarkets/grocery manufacturers
-# after finding appropriate image results that match the above criteria -> is there "price" or null? -> go to "link"
-# in the link, scrape the website with scrapeAPI
-# scrape price information 
-
 from dotenv import load_dotenv, find_dotenv
 import requests
 import os
 import glob
 import json
+from bs4 import BeautifulSoup
+from selenium import webdriver
+import time
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+import datetime
+import codecs
+import re
 
-# Define the directory where your JSON files are stored
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument(r'--profile-directory=/Users/kisaki/Library/Application Support/Google/Chrome/Default')
+driver = webdriver.Chrome(options=chrome_options) #r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/chromedriver"
+
 load_dotenv(find_dotenv())
 json_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/image_search_result/"
+
 SCRAPER_API_KEY = os.getenv('SCRAPER_API_KEY')
 
 def retrieve_json(json_directory):
@@ -54,6 +62,25 @@ def filter_results(most_recent_json_data, specific_source = ["Amazon.com", "Trad
                 pass
     return filtered_results
 
+# Define a function to clean the strings
+def clean_string(value):
+    if isinstance(value, str):
+        # Replace '\u' with spaces and remove '$' and leading/trailing whitespaces
+        cleaned_str = re.sub(r'[\/\\uU+200E$]', '', codecs.decode(value.encode(), 'unicode_escape')).replace(r'/', '').replace('$', '').strip() #
+        return cleaned_str
+    else:
+        return value
+
+# Clean the JSON data
+def clean_json(data):
+    if isinstance(data, dict):
+        return {key: clean_json(value) for key, value in data.items()}
+    elif isinstance(data, list):
+        return [clean_json(item) for item in data]
+    else:
+        return clean_string(data)
+
+
 def retrieve_price_value(filtered_results, SCRAPER_API_KEY=SCRAPER_API_KEY):
     
     for result in filtered_result:
@@ -91,11 +118,14 @@ def main():
         'url':link,
         'autoparse': 'true',
         }
+        headers = {
+        'tz': 'GMT+00:00',
+        }
         print("this is the scraping URL: {}".format(link))
 
         try:
             # Send a GET request to the ScraperAPI endpoint
-            response = requests.get('https://api.scraperapi.com', params=payload)
+            response = requests.get('https://api.scraperapi.com', headers=headers, params=payload)
             response.raise_for_status()
             if (
             response.status_code != 204 and
@@ -114,8 +144,30 @@ def main():
                 })
 
 
-            elif response.status_code != 204:
-                print(response.text)
+            elif response.status_code != 204: # come up with better error catching for different error codes, not html versions
+                try:
+                    driver.get(link)
+                    time.sleep(10)
+                    product_name = driver.find_elements(By.CLASS_NAME, "ProductDetails_main__title__14Cnm")[0].text
+                    price = driver.find_elements(By.CLASS_NAME, "ProductPrice_productPrice__price__3-50j")[0].text
+                    dim = driver.find_elements(By.CLASS_NAME, "ProductPrice_productPrice__unit__2jvkA")[0].text
+                    product_data.append({
+                    "product_name": product_name ,
+                    "product_price": price,
+                    "product_brand": source,
+                    "product_item_weight": "",
+                    "product_dimensions": dim,
+                    "product_review_rating_count": "",
+                    "product_review_stars": "",
+                    })
+                    #print(driver.page_source.encode("utf-8")) # this prints out the scraped texts
+
+                except Exception as e:
+                    print(f"An error occurred while scraping: {e}")
+
+                # finally:
+                #     # Close the Selenium WebDriver
+                #     driver.quit()
 
             else:
                 print(f"Failed to scrape the website. Status code: {response.status_code}")
@@ -123,11 +175,33 @@ def main():
         except requests.exceptions.RequestException as e:
             print(f"An error occurred: {e}")
     
-    print(product_data)
-    #return product_data
+    # Clean the JSON data
+    cleaned_json_data = clean_json(product_data)
 
+    # sanity check
+    # Convert the cleaned data back to a JSON string
+    #cleaned_json_string = json.dumps(cleaned_json_data, ensure_ascii=False)
 
-# if no pricing info in scraped info, use the pricing info in serpAPI
+    # Print the cleaned JSON string
+    #print(cleaned_json_string)
+
+    return cleaned_json_data
+
 
 if __name__ == "__main__":
-    main()
+    #main()
+    results_data = main()
+
+    # Define the directory where you want to save the JSON file
+    save_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/webscrape_result"
+
+    # Ensure the directory exists; create it if it doesn't
+    os.makedirs(save_directory, exist_ok=True)
+   
+    date = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+    json_file_path = os.path.join(save_directory, "scrape_result_{}.json".format(date))
+
+    with open(json_file_path, "w") as json_file:
+        json.dump(results_data, json_file, indent=4, ensure_ascii=False)
+
+    print(f"Scraped results have been saved to '{json_file_path}'.")

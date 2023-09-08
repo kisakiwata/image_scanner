@@ -20,3 +20,5 @@ google-search-results
 requests
 glob2
 dotenv
+bs4
+selenium
