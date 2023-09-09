@@ -22,3 +22,5 @@ glob2
 dotenv
 bs4
 selenium
+streamlit
+watchdog

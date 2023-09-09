@@ -134,21 +134,3 @@ def main(detection_model = detection_model, TEST_IMAGE_PATHS = TEST_IMAGE_PATHS)
 
 if __name__ == '__main__':
   main()
-  
-# save bounding box result as json file?
-
-
-
-# result = run_inference(TEST_IMAGE_PATHS, model=detection_model)
-# save_results(result)
-
-# download images to filepath (TEST_IMAGE_PATHS) or directly grabbing from dropbox URL?
-# after the inference, upload cropped images with AWS EC2 (?) + FAST API 
-# convert to base64
-
-# use serpa API to upload images to google API
-# use scrapeAI to scrape the first match from google API result (image search)
-# use beautiful soup to scrape price, prodcut name, and brannd
-
-# try this UI with streamlit
-
