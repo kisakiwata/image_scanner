@@ -11,6 +11,7 @@ from selenium.webdriver.common.by import By
 import datetime
 import codecs
 import re
+from retail_config import specific_source
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -43,7 +44,7 @@ def retrieve_json(json_directory):
         except Exception as e:
             print(f"Error loading JSON file: {e}")
 
-def filter_results(most_recent_json_data, specific_source = ["Amazon.com", "Trader Joe's"]): # add more filter e.g. Walmart, Costco, Wholefoods
+def filter_results(most_recent_json_data, specific_source = specific_source): # add more filter e.g. Walmart, Costco, Wholefoods
             
     filtered_results = []
     # Iterate through the results for each image
@@ -134,11 +135,12 @@ def main():
                 product = response.json()
 
                 product_data.append({
-                "product_name": product["name"],
-                "product_price": product["pricing"],
-                "product_brand": product["brand"],
-                "product_item_weight": product["product_information"]["Item Weight"],
-                "product_dimensions": product["product_information"]["Dimensions"],
+                "product_name": product.get("name", ""),
+                "product_price": product.get("pricing", ""),
+                "product_brand_1": source,
+                "product_brand_2": product.get("brand", ""),
+                "product_item_weight": product["product_information"].get("Item Weight", ""),
+                "product_dimensions": product["product_information"].get("Dimensions", ""),
                 "product_review_rating_count": product["product_information"]["Customer Reviews"]["ratings_count"],
                 "product_review_stars": product["product_information"]["Customer Reviews"]["stars"],
                 })
@@ -154,7 +156,8 @@ def main():
                     product_data.append({
                     "product_name": product_name ,
                     "product_price": price,
-                    "product_brand": source,
+                    "product_brand_1": source,
+                    "product_brand_2": "",
                     "product_item_weight": "",
                     "product_dimensions": dim,
                     "product_review_rating_count": "",
