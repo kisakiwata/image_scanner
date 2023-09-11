@@ -4,10 +4,10 @@ import shutil
 
 # List of scripts to run in order
 scripts_to_run = [
-    (models/research/inference.py, models/research/outputs/),
-    (models/research/app.py, models/research/result_urls/),
-    (models/research/image_search.py, models/research/image_search_result/),
-    (models/research/web_scraping.py, models/research/webscrape_result/)
+    ("models/research/inference.py", "models/research/outputs/"),
+    ("models/research/app.py", "models/research/result_urls/"),
+    ("models/research/image_search.py", "models/research/image_search_result/"),
+    ("models/research/web_scraping.py", "models/research/webscrape_result/")
 ]
 
 # Create output directories if they don't exist

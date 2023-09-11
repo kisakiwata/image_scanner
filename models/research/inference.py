@@ -1,3 +1,7 @@
+import pip
+
+pip.main(['install', 'protobuf==3.19.0'])
+
 import numpy as np
 import os
 import sys
@@ -14,6 +18,7 @@ from IPython.display import display
 
 from object_detection.utils import ops as utils_ops
 from object_detection.utils import label_map_util
+
 #from object_detection.utils import visualization_utils as vis_util
 
 # patch tf1 into `utils.ops`
