@@ -1,3 +1,9 @@
+import sys
+import subprocess
+
+# as inference.py requires protobuf==3.19.*, now force reinstalling the updated version
+subprocess.run("pip install --upgrade --force-reinstall protobuf", shell=True)
+
 import streamlit as st
 import pandas as pd
 import numpy as np
