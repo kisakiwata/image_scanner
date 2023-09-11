@@ -24,3 +24,6 @@ bs4
 selenium
 streamlit
 watchdog
+streamlit_lottie
+IPython
+streamlit-aggrid

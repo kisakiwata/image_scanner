@@ -39,7 +39,7 @@ def main():
         if results.get("visual_matches"):
             google_reverse_image_data[f"results for image {index}"]["visual_matches"] = []
 
-            for result in results["visual_matches"][:6]:  #  Save only the top 6 results
+            for result in results["visual_matches"][:20]:  #  Save only the top 20 results
                 visual_matches = {
                     "position": result.get("position"),
                     "title": result.get("title"),
@@ -60,7 +60,7 @@ def main():
             google_reverse_image_data[f"results for image {index}"]["text_results"] = []
 
             combined_text = []
-            for result in results["text_results"]:  # [:3] Save only the top 3 results:                
+            for result in results["text_results"]:           
                 combined_text.append(result.get("text"))
             
             combined_text_dict = {"text": " ".join(combined_text)}
