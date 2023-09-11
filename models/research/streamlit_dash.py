@@ -67,7 +67,7 @@ json_data = retrieve_json(json_directory)
 
 # Selectbox 
 selected_options = st.multiselect("Filter by retail", specific_source, key="product_brand_1") #, default=specific_source
-st.write("You selected:", [value for value in selected_options])
+#st.write("You selected:", [value for value in selected_options])
 
 
 
