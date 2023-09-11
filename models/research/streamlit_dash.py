@@ -119,7 +119,10 @@ gridOptions = gb.build()
 st.subheader("Filtered Data")
 if not df.empty:
     gb = GridOptionsBuilder.from_dataframe(df_filtered)
-    grid_response = AgGrid(df_filtered, gridOptions=gb.build(), width="100%", height=400)
+    grid_response = AgGrid(df_filtered, gridOptions=gb.build(), width="100%", height=400,
+    data_return_mode='AS_INPUT', 
+    update_mode='MODEL_CHANGED', 
+    fit_columns_on_grid_load=False,)
 else:
     st.write("No data found for the selected options:", selected_options)
 

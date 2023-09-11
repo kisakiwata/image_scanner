@@ -152,7 +152,7 @@ def main():
                 "product_dimensions": product["product_information"].get("Dimensions", ""),
                 "product_review_rating_count": ratings_count, #product["product_information"]["Customer Reviews"]["ratings_count"],
                 "product_review_stars": stars, #product["product_information"]["Customer Reviews"]["stars"],
-                "product_review_stars": link
+                "product_link": link
                 })
 
 
