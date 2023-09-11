@@ -134,19 +134,29 @@ def main():
             ):
                 product = response.json()
 
+                # Check if 'Customer Reviews' is available in product_information
+                product_review_info = product["product_information"].get("Customer Reviews", {})
+                ratings_count = product_review_info.get("ratings_count", "")
+                stars = product_review_info.get("stars", "")
+                
+                if price is not None: 
+                    product_price = price.get("extracted_value", "")
+                else:
+                    product_price = product.get("pricing", "")
+
                 product_data.append({
                 "product_name": product.get("name", ""),
-                "product_price": product.get("pricing", ""),
+                "product_price": product_price,
                 "product_brand_1": source,
                 "product_brand_2": product.get("brand", ""),
                 "product_item_weight": product["product_information"].get("Item Weight", ""),
                 "product_dimensions": product["product_information"].get("Dimensions", ""),
-                "product_review_rating_count": product["product_information"]["Customer Reviews"]["ratings_count"],
-                "product_review_stars": product["product_information"]["Customer Reviews"]["stars"],
+                "product_review_rating_count": ratings_count, #product["product_information"]["Customer Reviews"]["ratings_count"],
+                "product_review_stars": stars #product["product_information"]["Customer Reviews"]["stars"],
                 })
 
 
-            elif response.status_code != 204: # come up with better error catching for different error codes, not html versions
+            elif response.status_code != 204: # come up with better error catching for different error codes, not html versions # work on walmart/wholefoods scraping
                 try:
                     driver.get(link)
                     time.sleep(10)
