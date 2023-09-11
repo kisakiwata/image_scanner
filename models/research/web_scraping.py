@@ -107,12 +107,11 @@ def main():
     product_data = []
     for result in filtered_results:
         visual_matches = result.get("visual_matches", [])
-        source = visual_matches.get("source")
-        link = visual_matches.get("link")
-        source = visual_matches.get("source")
-        rating = visual_matches.get("rating")
-        reviews = visual_matches.get("reviews")
-        price = visual_matches.get("price")
+        source = visual_matches.get("source", "")
+        link = visual_matches.get("link", "")
+        rating = visual_matches.get("rating", "")
+        reviews = visual_matches.get("reviews", "")
+        price = visual_matches.get("price", "")
 
         payload = {
         'api_key': SCRAPER_API_KEY,
@@ -152,7 +151,8 @@ def main():
                 "product_item_weight": product["product_information"].get("Item Weight", ""),
                 "product_dimensions": product["product_information"].get("Dimensions", ""),
                 "product_review_rating_count": ratings_count, #product["product_information"]["Customer Reviews"]["ratings_count"],
-                "product_review_stars": stars #product["product_information"]["Customer Reviews"]["stars"],
+                "product_review_stars": stars, #product["product_information"]["Customer Reviews"]["stars"],
+                "product_review_stars": link
                 })
 
 
