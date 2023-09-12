@@ -49,16 +49,20 @@ def filter_results(most_recent_json_data, specific_source = specific_source): # 
     filtered_results = []
     # Iterate through the results for each image
     for image_key, image_data in most_recent_json_data.items():
+        # Create a set to store unique sources for each image_key
+        unique_sources = set()
         # Check if the specific source is in the visual matches for the image
         visual_matches = image_data.get("visual_matches", [])
         for match in visual_matches:
             source = match.get("source")
 
-            if source in specific_source: # If the source matches the specific source, add the image_key and image_data to the list
+            if source in specific_source and source not in unique_sources: # If the source matches the specific source, add the image_key and image_data to the list
+                # modify this logic to filter further to just get one retail link for each product
                 filtered_results.append({
                     "image_key": image_key,
                     "visual_matches": match
                 })
+                unique_sources.add(source)
             else:
                 pass
     return filtered_results
