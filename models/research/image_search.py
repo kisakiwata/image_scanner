@@ -2,10 +2,26 @@ from serpapi import GoogleSearch
 import os
 import json
 import datetime
+import glob
 from dotenv import load_dotenv
 
 
-file_path = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/result_urls/uploaded_urls.txt"
+#file_path = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/result_urls/uploaded_urls.txt"
+# Directory to store URLs
+dirname = os.path.dirname(__file__)
+URLS_DIRECTORY = os.path.join(dirname,'result_urls')
+
+def retrieve_latest_url_data(URLS_DIRECTORY):
+    # Get a list of TXT files in the directory
+    txt_files = glob.glob(os.path.join(URLS_DIRECTORY, "*.txt"))
+
+    # Check if there are any TXT files
+    if not txt_files:
+        print("No txt files found in the directory.")
+    else:
+        # Find the most recently modified file
+        most_recent_txt_file = max(txt_files, key=os.path.getmtime)
+    return most_recent_txt_file
 
 def read_uploaded_urls(file_path):
     urls = []
@@ -18,7 +34,7 @@ def read_uploaded_urls(file_path):
         print(f"File '{file_path}' not found.")
     return urls
 
-image_urls = read_uploaded_urls(file_path)
+image_urls = read_uploaded_urls(retrieve_latest_url_data(URLS_DIRECTORY))
 
 def main():
     google_reverse_image_data = {}
@@ -72,8 +88,8 @@ if __name__ == "__main__":
     results_data = main()
 
     # Define the directory where you want to save the JSON file
-    save_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/image_search_result"
-
+    #save_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/image_search_result"
+    save_directory = os.path.join(dirname,'image_search_result')
     # Ensure the directory exists; create it if it doesn't
     os.makedirs(save_directory, exist_ok=True)
    
