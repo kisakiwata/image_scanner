@@ -19,7 +19,9 @@ chrome_options.add_argument(r'--profile-directory=/Users/kisaki/Library/Applicat
 driver = webdriver.Chrome(options=chrome_options) #r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/chromedriver"
 
 load_dotenv(find_dotenv())
-json_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/image_search_result/"
+# Directory to store URLs
+dirname = os.path.dirname(__file__)
+json_directory = os.path.join(dirname,'image_search_result')
 
 SCRAPER_API_KEY = os.getenv('SCRAPER_API_KEY')
 
@@ -210,8 +212,7 @@ if __name__ == "__main__":
     results_data = main()
 
     # Define the directory where you want to save the JSON file
-    save_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/webscrape_result"
-
+    save_directory = os.path.join(dirname,'webscrape_result')
     # Ensure the directory exists; create it if it doesn't
     os.makedirs(save_directory, exist_ok=True)
    

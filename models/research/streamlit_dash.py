@@ -4,6 +4,9 @@ import subprocess
 # as inference.py requires protobuf==3.19.*, now force reinstalling the updated version
 subprocess.run("pip install --upgrade --force-reinstall protobuf", shell=True)
 
+# add this arg to see latest results?
+#subprocess.run("python models/research/process.py", shell=True)
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -46,25 +49,6 @@ if uploaded_file is not None:
     st.write("Image uploaded!")
     st.image(uploaded_file, caption=None, width=1200, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
-# Interactive Widgets
-# st.subheader("Interactive Widgets")
-# number = st.number_input("Enter a number", min_value=0, max_value=100, value=50)
-# st.write("You entered:", number)
-
-# # Button
-# if st.button("Click me"):
-#     st.write("Button clicked!")
-
-# # Checkbox
-# checkbox = st.checkbox("Check this box")
-# if checkbox:
-#     st.write("Checkbox is checked")
-
-# Radio buttons
-# radio_option = st.radio("Choose an option", ["Amazon", "Trader Joe's", "Walmart", "Costco", "Wholefoods"])
-# st.write("You selected:", radio_option)
-
-
 # Display JSON
 st.subheader("Product Information")
 json_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/webscrape_result/"
@@ -75,10 +59,7 @@ json_data = retrieve_json(json_directory)
 selected_options = st.multiselect("Filter by retail", specific_source, key="product_brand_1") #, default=specific_source
 #st.write("You selected:", [value for value in selected_options])
 
-
-
 # Check if selected options exist in the JSON data
-# if selected_options:
     
 #     filtered_data = {option: json_data.get(option, {}) for key, option in selected_options.items()}
 #     df = pd.DataFrame(filtered_data)
@@ -114,7 +95,6 @@ gridOptions = gb.build()
 # selected = grid_response[selected_options] 
 # df_grid = pd.DataFrame(data)
 
-
 # Display the DataFrame using ag-Grid
 st.subheader("Filtered Data")
 if not df.empty:
@@ -126,18 +106,6 @@ if not df.empty:
 else:
     st.write("No data found for the selected options:", selected_options)
 
-
-
-#with st.spinner('Wait for it...'):
-    #time.sleep(5)
-
-#st.dataframe(df_grid)
-#st.json(json_data)
-
-
-
-# Table
-#st.table(df)
 
 # ---- CONTACT ----
 with st.container():

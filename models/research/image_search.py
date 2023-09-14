@@ -5,8 +5,6 @@ import datetime
 import glob
 from dotenv import load_dotenv
 
-
-#file_path = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/result_urls/uploaded_urls.txt"
 # Directory to store URLs
 dirname = os.path.dirname(__file__)
 URLS_DIRECTORY = os.path.join(dirname,'result_urls')
@@ -88,7 +86,6 @@ if __name__ == "__main__":
     results_data = main()
 
     # Define the directory where you want to save the JSON file
-    #save_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/image_search_result"
     save_directory = os.path.join(dirname,'image_search_result')
     # Ensure the directory exists; create it if it doesn't
     os.makedirs(save_directory, exist_ok=True)

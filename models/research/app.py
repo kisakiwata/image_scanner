@@ -1,10 +1,6 @@
 import os
-#from flask import Flask, render_template, request, redirect, url_for
 import boto3
-#from botocore.exceptions import NoCredentialsError
 import datetime
-
-#app = Flask(__name__)
 
 # Amazon S3 Configuration
 S3_BUCKET = "kiwi-cropped-image"
