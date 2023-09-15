@@ -19,6 +19,7 @@ from PIL import Image
 import time
 from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 from retail_config import specific_source
+import os
 
 # page config
 st.set_page_config(page_title="Image Scanning and Product Identification", layout="wide")
@@ -29,7 +30,11 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-local_css("models/research/style/style.css")
+# Directory to store URLs
+dirname = os.path.dirname(__file__)
+style_file = os.path.join(dirname,'style/style.css')
+print(style_file)
+local_css(style_file)
 
 # ---- HEADER SECTION ----
 with st.container():
