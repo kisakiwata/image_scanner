@@ -11,7 +11,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from web_scraping import retrieve_json
+from models.research.web_scraping import retrieve_json
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie

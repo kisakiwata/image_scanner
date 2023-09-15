@@ -20,7 +20,7 @@ boto3
 google-search-results
 requests
 glob2
-dotenv
+python-dotenv
 bs4
 selenium
 streamlit
