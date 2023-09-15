@@ -11,7 +11,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from models.research.web_scraping import retrieve_json
+import web_scraping
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -52,7 +52,7 @@ if uploaded_file is not None:
 # Display JSON
 st.subheader("Product Information")
 json_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/webscrape_result/"
-json_data = retrieve_json(json_directory)
+json_data = web_scraping.retrieve_json(json_directory)
 
 
 # Selectbox 
