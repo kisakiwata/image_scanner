@@ -18,4 +18,4 @@ COPY . .
 WORKDIR /models/research
 
 
-ENTRYPOINT ["streamlit", "run", "streamlit_dash.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "models/research/streamlit_dash.py", "--server.port=8501", "--server.address=0.0.0.0"]

@@ -15,7 +15,7 @@ from retail_config import specific_source
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
-chrome_options.add_argument(r'--profile-directory=/Users/kisaki/Library/Application Support/Google/Chrome/Default')
+#chrome_options.add_argument(r'--profile-directory=/Users/kisaki/Library/Application Support/Google/Chrome/Default') # removing for streamlit issue
 driver = webdriver.Chrome(options=chrome_options) #r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/chromedriver"
 
 load_dotenv(find_dotenv())
