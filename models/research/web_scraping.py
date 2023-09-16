@@ -12,11 +12,13 @@ import datetime
 import codecs
 import re
 from retail_config import specific_source
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
-#chrome_options.add_argument(r'--profile-directory=/Users/kisaki/Library/Application Support/Google/Chrome/Default') # removing for streamlit issue
-driver = webdriver.Chrome(options=chrome_options) #r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/chromedriver"
+chrome_options.add_argument(r'--profile-directory=/Users/kisaki/Library/Application Support/Google/Chrome/Default') # removing for streamlit issue
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options) #r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/chromedriver"
 
 load_dotenv(find_dotenv())
 # Directory to store URLs
