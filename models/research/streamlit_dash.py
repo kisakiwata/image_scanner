@@ -7,6 +7,9 @@ subprocess.run("pip install --upgrade --force-reinstall protobuf", shell=True)
 # add this arg to see latest results?
 #subprocess.run("python models/research/process.py", shell=True)
 
+import sys
+sys.path.append('/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/web_scraping.py')
+
 import streamlit as st
 import pandas as pd
 import numpy as np
