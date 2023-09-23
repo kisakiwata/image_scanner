@@ -12,8 +12,9 @@ import datetime
 import codecs
 import re
 from retail_config import specific_source
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+import re
+from serpapi import GoogleSearch
+import traceback
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -26,6 +27,12 @@ dirname = os.path.dirname(__file__)
 json_directory = os.path.join(dirname,'image_search_result')
 
 SCRAPER_API_KEY = os.getenv('SCRAPER_API_KEY')
+SERP_API_KEY = os.getenv('SERP_API_KEY')
+RAPID_API_KEY = os.getenv('RAPID_API_KEY')
+RED_CIRCLE_API_KEY = os.getenv('RED_CIRCLE_API_KEY')
+KROGER_API_BASE_URL = os.getenv('KROGER_API_BASE_URL')
+KROGER_ACCESS_TOKEN = os.getenv('TOKEN_1')
+
 
 def retrieve_json(json_directory):
     # Get a list of JSON files in the directory
@@ -110,91 +117,242 @@ def retrieve_price_value(filtered_results, SCRAPER_API_KEY=SCRAPER_API_KEY):
 
     return filtered_results
 
+async def get_products(term):    
+    # Use stored locationId
+    location_id = localStorage.getItem("locationId")
+    
+    # Use locationId as filter (if) selected by user
+    search_by_location = ""
+    if location_id:
+        search_by_location = f"filter.locationId={location_id}&"
+    
+    # Building product URL
+    # Query String (?filter.locationId={location_id}&filter.term={term})
+    products_url = f"{KROGER_API_BASE_URL}/v1/products?{search_by_location}filter.term={term}"
+    
+    # Product request body
+    headers = {
+        "Authorization": f"bearer {KROGER_ACCESS_TOKEN}",
+        "Content-Type": "application/json; charset=utf-8"
+    }
+    
+    products_response = requests.get(products_url, headers=headers)
+    
+    # Return JSON object
+    return products_response.json()
+
+
 def main():
     filtered_results = filter_results(most_recent_json_data=retrieve_json(json_directory))
     product_data = []
+
+    source_values = ["Amazon", "Amazon.com"]
+    walmart_sore_id = "2648"
+
     for result in filtered_results:
         visual_matches = result.get("visual_matches", [])
+        title = visual_matches.get("title", "")
         source = visual_matches.get("source", "")
         link = visual_matches.get("link", "")
         rating = visual_matches.get("rating", "")
         reviews = visual_matches.get("reviews", "")
         price = visual_matches.get("price", "")
 
-        payload = {
-        'api_key': SCRAPER_API_KEY,
-        'url':link,
-        'autoparse': 'true',
-        }
-        headers = {
-        'tz': 'GMT+00:00',
-        }
-        print("this is the scraping URL: {}".format(link))
+        if (
+        source in source_values #and
+        #response.headers["content-type"].strip().startswith("application/json")
+        ):
+        
+            payload = {
+            'api_key': SCRAPER_API_KEY,
+            'url':link,
+            'autoparse': 'true',
+            }
+            headers = {
+            'tz': 'GMT+00:00',
+            }
+            print("this is the scraping URL: {}".format(link))
 
-        try:
-            # Send a GET request to the ScraperAPI endpoint
-            response = requests.get('https://api.scraperapi.com', headers=headers, params=payload)
-            response.raise_for_status()
-            if (
-            response.status_code != 204 and
-            response.headers["content-type"].strip().startswith("application/json")
-            ):
-                product = response.json()
+            # try: # this is only for Amazon URLs
+            #     # Send a GET request to the ScraperAPI endpoint
+            #     response = requests.get('https://api.scraperapi.com', headers=headers, params=payload)
+            #     response.raise_for_status()
+            #     product = response.json()
 
-                # Check if 'Customer Reviews' is available in product_information
-                product_review_info = product["product_information"].get("Customer Reviews", {})
-                ratings_count = product_review_info.get("ratings_count", "")
-                stars = product_review_info.get("stars", "")
-                
-                if price is not None: 
-                    product_price = price.get("extracted_value", "")
+            #     if  response.status_code != 204:
+            #         # Check if 'Customer Reviews' is available in product_information
+            #         product_review_info = product["product_information"].get("Customer Reviews", {})
+            #         ratings_count = product_review_info.get("ratings_count", "")
+            #         stars = product_review_info.get("stars", "")
+                    
+            #         if price is not None: 
+            #             product_price = price.get("extracted_value", "")
+            #         else:
+            #             product_price = product.get("pricing", "")
+
+            #         product_data.append({
+            #         "product_name": product.get("name", ""),
+            #         "product_price": product_price,
+            #         "product_brand_1": source,
+            #         "product_brand_2": product.get("brand", ""),
+            #         "product_item_weight": product["product_information"].get("Item Weight", ""),
+            #         "product_dimensions": product["product_information"].get("Dimensions", ""),
+            #         "product_review_rating_count": ratings_count, #product["product_information"]["Customer Reviews"]["ratings_count"],
+            #         "product_review_stars": stars, #product["product_information"]["Customer Reviews"]["stars"],
+            #         "product_link": link
+            #         })
+            # except requests.exceptions.RequestException as e:
+            #     traceback.print_exc()
+            #     print(f"An error occurred: {e}")
+
+        elif source == "Walmart": # come up with better error catching for different error codes, not html versions # work on walmart/wholefoods scraping
+            try:
+                # Define a regular expression pattern to match the last 9-10 digits
+                pattern = r'/(\d{9,10})$'
+
+                # Use re.search to find the pattern in the link
+                match = re.search(pattern, link)
+
+                # Check if a match is found
+                if match:
+                    # Extract the matched digits
+                    product_id = match.group(1)
+                    params = {
+                    "engine": "walmart_product",
+                    "product_id": product_id,
+                    "api_key": SERP_API_KEY,
+                    "store_id": walmart_sore_id #replace with requested store id /zipcode logic 
+                    }
+                    print("this is the scraping URL: {}".format(link))
+
+                    search = GoogleSearch(params)
+                    results = search.get_dict()
+                    product_result = results.get("product_result", "")
+
+                    store_info = results.get("search_information", "")
+
+                    if product_result:
+                        # Extract the review
+                        reviews = product_result['reviews']
+
+                        if isinstance(reviews, dict):
+                            count = reviews.get("count", "")
+                            rating = reviews.get("rating", "")
+                        else:
+                            count = 0
+                            rating = ""
+                            
+                    
+                        # Extract the short description
+                        short_description = product_result['short_description_html']
+
+                        # Split the short description by "<br />"
+                        split_description = short_description.split('<br />')
+
+                        # Find and print the part after "Size"
+                        for part in split_description:
+                            if 'Size :' in part:
+                                size_info = part.split('Size :')[1].strip()
+                            else: size_info = ""
+
+
+                        product_categories = product_result.get("categories", [])
+
+                        product_category_1 = product_categories[0]["name"] if len(product_categories) > 0 else None
+                        product_category_2 = product_categories[1]["name"] if len(product_categories) > 1 else None
+                        product_category_3 = product_categories[2]["name"] if len(product_categories) > 2 else None
+                        product_category_4 = product_categories[3]["name"] if len(product_categories) > 3 else None
+                        product_category_5 = product_categories[4]["name"] if len(product_categories) > 4 else None
+
+
+                        #print(f"walmart scraped results 2: {product_result}")
+                        product_data.append({
+                        "product_name": product_result.get("title", ""),
+                        "product_price": product_result.get("price_map", "").get("price", ""),
+                        "product_brand_1": source,
+                        "product_brand_2": product_result.get("manufacturer", ""),
+                        "product_item_weight": "",
+                        "product_dimensions": size_info,
+                        "product_review_rating_count": count,
+                        "product_review_stars": rating,
+                        "product_link": link,
+                        "product_category_1": product_category_1,
+                        "product_category_2": product_category_2,
+                        "product_category_3": product_category_3,
+                        "product_category_4": product_category_4,
+                        "product_category_5": product_category_5,
+                        "store_location_zipcode": store_info["location"].get("postal_code", ""),
+                        "store_location_state": store_info["location"].get("province_code", ""),
+                        "store_location_city": store_info["location"].get("city", ""),
+                        "store_id": store_info["location"].get("store_id", ""),
+                        "product_id": product_id,
+                        "in_stock": product_result.get("in_stock", ""),
+
+                        }) # if no info, go to different walmart or similar product close to the zipcode?
                 else:
-                    product_price = product.get("pricing", "")
+                    print(f"Walmart - There is no product id.")
 
+            except Exception as e:
+                traceback.print_exc()
+                print(f"An error occurred while scraping Walmart: {e}")
+
+        elif source == "Trader Joe's": # come up with better error catching for different error codes, not html versions # work on walmart/wholefoods scraping
+            try:
+                driver.get(link)
+                time.sleep(10)
+                print("this is the scraping URL: {}".format(link))
+                product_name = driver.find_elements(By.CLASS_NAME, "ProductDetails_main__title__14Cnm")[0].text
+                price = driver.find_elements(By.CLASS_NAME, "ProductPrice_productPrice__price__3-50j")[0].text
+                dim = driver.find_elements(By.CLASS_NAME, "ProductPrice_productPrice__unit__2jvkA")[0].text
                 product_data.append({
-                "product_name": product.get("name", ""),
-                "product_price": product_price,
+                "product_name": product_name ,
+                "product_price": price,
                 "product_brand_1": source,
-                "product_brand_2": product.get("brand", ""),
-                "product_item_weight": product["product_information"].get("Item Weight", ""),
-                "product_dimensions": product["product_information"].get("Dimensions", ""),
-                "product_review_rating_count": ratings_count, #product["product_information"]["Customer Reviews"]["ratings_count"],
-                "product_review_stars": stars, #product["product_information"]["Customer Reviews"]["stars"],
-                "product_link": link
+                "product_brand_2": "",
+                "product_item_weight": "",
+                "product_dimensions": dim,
+                "product_review_rating_count": "",
+                "product_review_stars": "",
                 })
+                #print(driver.page_source.encode("utf-8")) # this prints out the scraped texts
+
+            except Exception as e:
+                traceback.print_exc()
+                print(f"An error occurred while scraping: {e}")
+
+            # finally:
+            #     # Close the Selenium WebDriver
+            #     driver.quit()
+        
+        else:
+            try:
+                # Target
+                params = {
+                'api_key': RED_CIRCLE_API_KEY,
+                'search_term': title,
+                'type': 'search',
+                'delivery_type': 'buy_at_store',
+                'include_out_of_stock': 'true'
+                }
+
+                # make the http GET request to RedCircle API
+                api_result = requests.get('https://api.redcircleapi.com/request', params)
+
+                # print the JSON response from RedCircle API
+                print(json.dumps(api_result.json()))
+
+                # Costco
+
+                # Kroger 
 
 
-            elif response.status_code != 204: # come up with better error catching for different error codes, not html versions # work on walmart/wholefoods scraping
-                try:
-                    driver.get(link)
-                    time.sleep(10)
-                    product_name = driver.find_elements(By.CLASS_NAME, "ProductDetails_main__title__14Cnm")[0].text
-                    price = driver.find_elements(By.CLASS_NAME, "ProductPrice_productPrice__price__3-50j")[0].text
-                    dim = driver.find_elements(By.CLASS_NAME, "ProductPrice_productPrice__unit__2jvkA")[0].text
-                    product_data.append({
-                    "product_name": product_name ,
-                    "product_price": price,
-                    "product_brand_1": source,
-                    "product_brand_2": "",
-                    "product_item_weight": "",
-                    "product_dimensions": dim,
-                    "product_review_rating_count": "",
-                    "product_review_stars": "",
-                    })
-                    #print(driver.page_source.encode("utf-8")) # this prints out the scraped texts
 
-                except Exception as e:
-                    print(f"An error occurred while scraping: {e}")
 
-                # finally:
-                #     # Close the Selenium WebDriver
-                #     driver.quit()
+            except:
+                traceback.print_exc()
+                print(f"Failed to scrape Target website. Status code: {response.status_code}")
 
-            else:
-                print(f"Failed to scrape the website. Status code: {response.status_code}")
 
-        except requests.exceptions.RequestException as e:
-            print(f"An error occurred: {e}")
     
     # Clean the JSON data
     cleaned_json_data = clean_json(product_data)
