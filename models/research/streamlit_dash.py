@@ -21,11 +21,12 @@ from streamlit_lottie import st_lottie
 from PIL import Image
 import time
 from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
-from retail_config import specific_source
+#from retail_config import specific_source
+from pyzipcode import ZipCodeDatabase
 import os
 
 # page config
-st.set_page_config(page_title="Image Scanning and Product Identification", layout="wide")
+st.set_page_config(page_title="Image Scan for Quick Product Identification", layout="wide")
 
 # Use local CSS
 def local_css(file_name):
@@ -41,11 +42,11 @@ local_css(style_file)
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.subheader("Image Scanning and Product Identification")
-    st.title("Integrate fast and reliable Image Scanning into your mobile apps and websites")
-    st.write(
-        "Get started with your trusted partner!"
-    )
+    st.header("Image Scan for Quick Product Identification")
+    st.subheader("Integrate into your mobile apps and websites")
+    # st.write(
+    #     "Get started with your trusted partner!"
+    # )
     #st.write("[Learn More >](https://pythonandvba.com)")
 
 # Markdown
@@ -59,25 +60,37 @@ if uploaded_file is not None:
 
 # Display JSON
 st.subheader("Product Information")
-json_directory = r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/webscrape_result/"
+dirname = os.path.dirname(__file__)
+json_directory = os.path.join(dirname,'webscrape_result')
 json_data = retrieve_json(json_directory)
-
-
-# Selectbox 
-selected_options = st.multiselect("Filter by retail", specific_source, key="product_brand_1") #, default=specific_source
-#st.write("You selected:", [value for value in selected_options])
-
-# Check if selected options exist in the JSON data
-    
-#     filtered_data = {option: json_data.get(option, {}) for key, option in selected_options.items()}
-#     df = pd.DataFrame(filtered_data)
-
 
 # Dataframe
 df = pd.DataFrame(json_data)
+cols = df.columns
+new_cols = ['product_id','product_name',  'in_stock', 'product_brand_1', 'product_brand_2',
+       'product_category_1', 'product_category_2', 'product_category_3',
+       'product_review_rating_count', 'product_review_stars', 'product_price', 
+       'product_dimensions', 'product_item_weight', 'product_unit',
+       'store_location_zipcode', 'store_location_state', 'store_location_city',
+       'store_id', 'product_link', 'brand_link', 'inventory_stockLevel',
+       'tcin']
+df = df[new_cols]
+df = df.rename(columns={'product_brand_1': 'retail', 'product_brand_2': 'brand'})
+
+with st.sidebar:
+    # Selectbox 
+    st.markdown("Input Location")
+    location = st.text_input('Zipcode:', '94117')
+    zcdb = ZipCodeDatabase()
+    city_state = zcdb[location].city + ", " + zcdb[location].state
+    st.write('Current search location is', city_state)
+    selected_options = st.multiselect("Filter by retail", list(set(df["retail"]))) #, default=specific_source
+    
+
+#st.write("You selected:", [value for value in selected_options])
 
 # Filter the original DataFrame to only include rows with the selected colors
-df_filtered = df[df['product_brand_1'].isin(selected_options)]
+df_filtered = df[df['retail'].isin(selected_options)]
 
 #convert dataframe to adgrid
 gb = GridOptionsBuilder.from_dataframe(df_filtered)
@@ -104,7 +117,7 @@ gridOptions = gb.build()
 # df_grid = pd.DataFrame(data)
 
 # Display the DataFrame using ag-Grid
-st.subheader("Filtered Data")
+#st.subheader("Filtered Data")
 if not df.empty:
     gb = GridOptionsBuilder.from_dataframe(df_filtered)
     grid_response = AgGrid(df_filtered, gridOptions=gb.build(), width="100%", height=400,

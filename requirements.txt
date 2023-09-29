@@ -29,3 +29,5 @@ streamlit_lottie
 IPython
 streamlit-aggrid
 webdriver_manager
+nltk
+pyzipcode
