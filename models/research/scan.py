@@ -2,13 +2,13 @@ import sys
 import subprocess
 
 # as inference.py requires protobuf==3.19.*, now force reinstalling the updated version
-subprocess.run("pip install --upgrade --force-reinstall protobuf", shell=True)
+#subprocess.run("pip install --upgrade --force-reinstall protobuf", shell=True)
 
 # add this arg to see latest results?
 #subprocess.run("python models/research/process.py", shell=True)
 
 import sys
-sys.path.append('/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/web_scraping.py')
+#sys.path.append('/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/web_scraping.py')
 
 import streamlit as st
 import pandas as pd
@@ -25,8 +25,10 @@ from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 from pyzipcode import ZipCodeDatabase
 import os
 
+
 # page config
-st.set_page_config(page_title="Image Scan for Quick Product Identification", layout="wide")
+st.set_page_config(page_title="Home", layout="wide", initial_sidebar_state="expanded")
+
 
 # Use local CSS
 def local_css(file_name):
@@ -40,13 +42,19 @@ style_file = os.path.join(dirname,'style/style.css')
 print(style_file)
 local_css(style_file)
 
+
+
 # ---- HEADER SECTION ----
 with st.container():
-    st.header("Image Scan for Quick Product Identification")
-    st.subheader("Integrate into your mobile apps and websites")
-    # st.write(
-    #     "Get started with your trusted partner!"
-    # )
+
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.header("Image Scan for Quick Product Identification")
+        st.subheader("Integrate into your mobile apps and websites")
+    with right_column:
+        logo = os.path.join(dirname, '..', 'Image_scanner.png')
+        st.image(logo, width=100)
+
     #st.write("[Learn More >](https://pythonandvba.com)")
 
 # Markdown
@@ -128,24 +136,24 @@ else:
     st.write("No data found for the selected options:", selected_options)
 
 
-# ---- CONTACT ----
-with st.container():
-    st.write("---")
-    st.header("Contact us")
-    st.write("##")
+# # ---- CONTACT ----
+# with st.container():
+#     st.write("---")
+#     st.header("Contact us")
+#     st.write("##")
 
-    # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
-    contact_form = """
-    <form action="https://formsubmit.co/watanabekisaki@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message here" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-    """
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.markdown(contact_form, unsafe_allow_html=True)
-    with right_column:
-        st.empty()
+#     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
+#     contact_form = """
+#     <form action="https://formsubmit.co/watanabekisaki@gmail.com" method="POST">
+#         <input type="hidden" name="_captcha" value="false">
+#         <input type="text" name="name" placeholder="Your name" required>
+#         <input type="email" name="email" placeholder="Your email" required>
+#         <textarea name="message" placeholder="Your message here" required></textarea>
+#         <button type="submit">Send</button>
+#     </form>
+#     """
+#     left_column, right_column = st.columns(2)
+#     with left_column:
+#         st.markdown(contact_form, unsafe_allow_html=True)
+#     with right_column:
+#         st.empty()
