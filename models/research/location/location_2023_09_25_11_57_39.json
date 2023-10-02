@@ -1,0 +1,203 @@
+{
+    "data": [
+        {
+            "locationId": "70400357",
+            "storeNumber": "00357",
+            "divisionNumber": "704",
+            "chain": "FOODSCO",
+            "address": {
+                "addressLine1": "1800 Folsom St",
+                "city": "San Francisco",
+                "state": "CA",
+                "zipCode": "94103",
+                "county": "SAN FRANCISCO COUNTY"
+            },
+            "geolocation": {
+                "latitude": 37.7677384,
+                "longitude": -122.4161106,
+                "latLng": "37.7677384,-122.4161106"
+            },
+            "name": "Foodsco - Folsom",
+            "hours": {
+                "timezone": "America/Los_Angeles",
+                "gmtOffset": "(UTC-08:00) Pacific Time (US Canada)",
+                "open24": false,
+                "monday": {
+                    "open": "06:00",
+                    "close": "22:00",
+                    "open24": false
+                },
+                "tuesday": {
+                    "open": "07:00",
+                    "close": "22:00",
+                    "open24": false
+                },
+                "wednesday": {
+                    "open": "06:00",
+                    "close": "22:00",
+                    "open24": false
+                },
+                "thursday": {
+                    "open": "06:00",
+                    "close": "22:00",
+                    "open24": false
+                },
+                "friday": {
+                    "open": "07:00",
+                    "close": "22:00",
+                    "open24": false
+                },
+                "saturday": {
+                    "open": "06:00",
+                    "close": "22:00",
+                    "open24": false
+                },
+                "sunday": {
+                    "open": "06:00",
+                    "close": "22:00",
+                    "open24": false
+                }
+            },
+            "phone": "4155589137",
+            "departments": [
+                {
+                    "departmentId": "05",
+                    "name": "Seafood Department"
+                },
+                {
+                    "departmentId": "08",
+                    "name": "Floral"
+                },
+                {
+                    "departmentId": "63",
+                    "name": "I-wireless"
+                },
+                {
+                    "departmentId": "LY",
+                    "name": "Lottery Tickets"
+                },
+                {
+                    "departmentId": "01",
+                    "name": "Deli"
+                },
+                {
+                    "departmentId": "02",
+                    "name": "Bakery"
+                },
+                {
+                    "departmentId": "06",
+                    "name": "Liquor"
+                },
+                {
+                    "departmentId": "55",
+                    "name": "Atm"
+                },
+                {
+                    "departmentId": "60",
+                    "name": "Red Box"
+                }
+            ]
+        },
+        {
+            "locationId": "70400351",
+            "storeNumber": "00351",
+            "divisionNumber": "704",
+            "chain": "FOODSCO",
+            "address": {
+                "addressLine1": "345 Williams Ave",
+                "city": "San Francisco",
+                "state": "CA",
+                "zipCode": "94124",
+                "county": "SAN FRANCISCO COUNTY"
+            },
+            "geolocation": {
+                "latitude": 37.7298405,
+                "longitude": -122.398825,
+                "latLng": "37.7298405,-122.398825"
+            },
+            "name": "Foodsco - San Francisco Williams",
+            "hours": {
+                "timezone": "America/Los_Angeles",
+                "gmtOffset": "(UTC-08:00) Pacific Time (US Canada)",
+                "open24": false,
+                "monday": {
+                    "open": "07:00",
+                    "close": "23:00",
+                    "open24": false
+                },
+                "tuesday": {
+                    "open": "07:00",
+                    "close": "23:00",
+                    "open24": false
+                },
+                "wednesday": {
+                    "open": "07:00",
+                    "close": "23:00",
+                    "open24": false
+                },
+                "thursday": {
+                    "open": "07:00",
+                    "close": "23:00",
+                    "open24": false
+                },
+                "friday": {
+                    "open": "07:00",
+                    "close": "23:00",
+                    "open24": false
+                },
+                "saturday": {
+                    "open": "07:00",
+                    "close": "23:00",
+                    "open24": false
+                },
+                "sunday": {
+                    "open": "07:00",
+                    "close": "23:00",
+                    "open24": false
+                }
+            },
+            "phone": "4153301870",
+            "departments": [
+                {
+                    "departmentId": "55",
+                    "name": "Atm"
+                },
+                {
+                    "departmentId": "63",
+                    "name": "I-wireless"
+                },
+                {
+                    "departmentId": "LY",
+                    "name": "Lottery Tickets"
+                },
+                {
+                    "departmentId": "01",
+                    "name": "Deli"
+                },
+                {
+                    "departmentId": "02",
+                    "name": "Bakery"
+                },
+                {
+                    "departmentId": "05",
+                    "name": "Seafood Department"
+                },
+                {
+                    "departmentId": "06",
+                    "name": "Liquor"
+                },
+                {
+                    "departmentId": "08",
+                    "name": "Floral"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "start": 1,
+            "limit": 2,
+            "total": 2
+        }
+    }
+}
