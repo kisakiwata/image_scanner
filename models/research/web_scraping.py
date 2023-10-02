@@ -28,7 +28,7 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument(r'--profile-directory=Google Chrome')
                             #/Users/kisaki/Library/Application Support/Google/Chrome/Default') # removing for streamlit issue
-driver = webdriver.Chrome( options=chrome_options) #r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/chromedriver" #service=Service(ChromeDriverManager().install()),
+#driver = webdriver.Chrome( options=chrome_options) #r"/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/chromedriver" #service=Service(ChromeDriverManager().install()),
 
 load_dotenv(find_dotenv())
 # Directory to store URLs
