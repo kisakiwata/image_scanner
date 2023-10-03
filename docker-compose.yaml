@@ -1,0 +1,11 @@
+version: '3'
+services:
+  streamlit-app:
+    build:
+      context: ./  # Set the build context to the root of your project
+      dockerfile: Dockerfile  # Specify the path to your Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models/research:/models/research  # Mount your project directory into the container
+    command: ["streamlit", "run", "models/research/scan.py", "--server.port=8501", "--server.address=0.0.0.0"]

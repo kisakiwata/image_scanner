@@ -15,11 +15,12 @@ numpy
 matplotlib
 #opencv-python==3.4.13.47 (installed with pip3)
 protobuf==3.19.0
-Flask boto3
+#Flask
+boto3
 google-search-results
 requests
 glob2
-dotenv
+python-dotenv
 bs4
 selenium
 streamlit
@@ -27,3 +28,6 @@ watchdog
 streamlit_lottie
 IPython
 streamlit-aggrid
+webdriver_manager
+nltk
+pyzipcode

@@ -9,6 +9,7 @@ import tarfile
 import tensorflow as tf
 import pathlib
 import argparse
+import datetime
 
 from collections import defaultdict
 from io import StringIO
@@ -81,7 +82,7 @@ def run_inference_for_single_image(model, image):
 
   return output_dict
 
-def show_inference(model, image_path, dir=r'/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/outputs'):
+def show_inference(model, image_path, dir):
   image_np = np.array(Image.open(image_path))
   output_dict = run_inference_for_single_image(model, image_np)
   
@@ -96,7 +97,7 @@ def show_inference(model, image_path, dir=r'/Users/kisaki/Desktop/Kisaki_Persona
   scores = output_dict['detection_scores']
   classes = output_dict['detection_classes']
   for i in range(len(boxes)): #min(max_boxes_to_draw, boxes.shape[0])
-      if (scores[i] > .4) & (boxes[i] is not None):
+      if (scores[i] > .45) & (boxes[i] is not None):
           display_str.append(boxes[i])
           
           if boxes[i] is not None:
@@ -126,16 +127,28 @@ def show_inference(model, image_path, dir=r'/Users/kisaki/Desktop/Kisaki_Persona
 model_name = 'efficientdet_d0_coco17_tpu-32'
 detection_model = load_model(model_name)
 
-PATH_TO_TEST_IMAGES_DIR = pathlib.Path(r'/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/object_detection/test_images')
+
+dirname = os.path.dirname(__file__)
+image_directory = os.path.join(dirname,'images')
+
+PATH_TO_TEST_IMAGES_DIR = pathlib.Path(image_directory)#r'/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/object_detection/test_images
 types = ('*.jpg', '*.jpeg', '*.png')
 files_grabbed = []
 for files in types:
     files_grabbed.extend(PATH_TO_TEST_IMAGES_DIR.glob(files))
 TEST_IMAGE_PATHS = sorted(files_grabbed)
 
+# create output folder for each inference timing
+# Define the directory where you want to save the JSON file
+save_directory = os.path.join(dirname,'inference_output')
+os.makedirs(save_directory, exist_ok=True)
+#date = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
+# save_dir_output = os.path.join(dirname,'inference_output', "output_{}".format(date))
+# os.makedirs(save_dir_output, exist_ok=True)
+
 def main(detection_model = detection_model, TEST_IMAGE_PATHS = TEST_IMAGE_PATHS):
   for image_path in TEST_IMAGE_PATHS:
-    show_inference(detection_model, image_path)
+    show_inference(detection_model, image_path, dir=save_directory)
 
 if __name__ == '__main__':
   main()

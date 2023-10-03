@@ -1,0 +1,2485 @@
+[
+    {
+        "product_id": "495861",
+        "upc": "495861",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack Factory Garlic Parmesan Pretzel Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "8456465",
+        "upc": "8456465",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stacy's",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Stacy's Mltigrain Baked Pita Chips Snacks",
+        "product_price": null
+    },
+    {
+        "product_id": "87668195",
+        "upc": "87668195",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stonefire",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "CANADA",
+        "product_name": "StonefireÂ® verything Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "495861",
+        "upc": "495861",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack Factory Garlic Parmesan Pretzel Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "49586",
+        "upc": "49586",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack FactoryÂ® verything Pretzel Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "495811",
+        "upc": "495811",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Deli",
+            "Snacks",
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack Factory Pretzel Crisps Honey Mstard and Onion",
+        "product_price": null
+    },
+    {
+        "product_id": "49586",
+        "upc": "49586",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack FactoryÂ® Original Pretzel Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "8456465",
+        "upc": "8456465",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stacy's",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Stacy's Mltigrain Baked Pita Chips Snacks",
+        "product_price": null
+    },
+    {
+        "product_id": "495861",
+        "upc": "495861",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack Factory Garlic Parmesan Pretzel Crisps",
+        "product_price": {
+            "value": "9.99*",
+            "extracted_value": 9.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "8456465",
+        "upc": "8456465",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stacy's",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Stacy's Mltigrain Baked Pita Chips Snacks",
+        "product_price": {
+            "value": "9.99*",
+            "extracted_value": 9.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "87668195",
+        "upc": "87668195",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stonefire",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "CANADA",
+        "product_name": "StonefireÂ® verything Crisps",
+        "product_price": {
+            "value": "9.99*",
+            "extracted_value": 9.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": {
+            "value": "9.99*",
+            "extracted_value": 9.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": {
+            "value": "9.99*",
+            "extracted_value": 9.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "495861",
+        "upc": "495861",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack Factory Garlic Parmesan Pretzel Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "8456465",
+        "upc": "8456465",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stacy's",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Stacy's Mltigrain Baked Pita Chips Snacks",
+        "product_price": null
+    },
+    {
+        "product_id": "87668195",
+        "upc": "87668195",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stonefire",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "CANADA",
+        "product_name": "StonefireÂ® verything Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "8159947",
+        "upc": "8159947",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Late Jly",
+        "product_category_1": [
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Late Jly Organic Medim Salsa",
+        "product_price": null
+    },
+    {
+        "product_id": "3659313",
+        "upc": "3659313",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "RW Garcia",
+        "product_category_1": [
+            "Natral & Organic",
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "RW Garcia Organic Ble Corn Chips",
+        "product_price": null
+    },
+    {
+        "product_id": "75344881",
+        "upc": "75344881",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Mir Glen Organic",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Mir Glenâ¢ Organic Black Bean And Corn Salsa",
+        "product_price": null
+    },
+    {
+        "product_id": "1111866",
+        "upc": "1111866",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Simple Trth Organic",
+        "product_category_1": [
+            "Natral & Organic",
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Simple Trth OrganicÂ® Ble Corn Tortilla Chips",
+        "product_price": null
+    },
+    {
+        "product_id": "1583981",
+        "upc": "1583981",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Garden of atin'",
+        "product_category_1": [
+            "Natral & Organic",
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Garden of atin'Â® Ble Corn Tortilla Chips Party Size",
+        "product_price": null
+    },
+    {
+        "product_id": "7513546",
+        "upc": "7513546",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "SnRidge Farms",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "",
+        "product_name": "Snridge Farms - Chips Chrro Plantain - Case of 1-1 OZ",
+        "product_price": {
+            "value": "98.49*",
+            "extracted_value": 98.49,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "495861",
+        "upc": "495861",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack Factory Garlic Parmesan Pretzel Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "8456465",
+        "upc": "8456465",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stacy's",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Stacy's Mltigrain Baked Pita Chips Snacks",
+        "product_price": null
+    },
+    {
+        "product_id": "87668195",
+        "upc": "87668195",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stonefire",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "CANADA",
+        "product_name": "StonefireÂ® verything Crisps",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "71146638",
+        "upc": "71146638",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Harvest Snaps",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Harvest SnapsÂ® Red Lentil Crnchy Loops Sor Cream & Onion",
+        "product_price": {
+            "value": "3.79*",
+            "extracted_value": 3.79,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "73313345",
+        "upc": "73313345",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "La Banderita",
+        "product_category_1": [
+            "Bakery"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "La Banderita Carb Conter Qeso & Jalapeno Tortillas",
+        "product_price": {
+            "value": "6.99*",
+            "extracted_value": 6.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "733133",
+        "upc": "733133",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "La Banderita",
+        "product_category_1": [
+            "Bakery",
+            "International"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "La Banderita Low Carb Keto Friendly Carb Conter Large Tortilla",
+        "product_price": {
+            "value": "6.99*",
+            "extracted_value": 6.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "733131",
+        "upc": "733131",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Ole",
+        "product_category_1": [
+            "Bakery"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "OlÃ© Xtreme Wellness Keto Friendly Carb Lean High Fiber Tortillas",
+        "product_price": {
+            "value": "6.99*",
+            "extracted_value": 6.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "7373111",
+        "upc": "7373111",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Mission",
+        "product_category_1": [
+            "International",
+            "Bakery"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "MissionÂ® Carb BalanceÂ® Low Carb Whole Wheat Soft Taco Tortillas",
+        "product_price": {
+            "value": "6.99*",
+            "extracted_value": 6.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "73313317",
+        "upc": "73313317",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "La Banderita",
+        "product_category_1": [
+            "Bakery",
+            "International"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "La Banderita Low Carb Keto Friendly Carb Conter Street Taco Tortilla",
+        "product_price": {
+            "value": "6.99*",
+            "extracted_value": 6.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "495861",
+        "upc": "495861",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack Factory Garlic Parmesan Pretzel Crisps",
+        "product_price": {
+            "value": "1.99*",
+            "extracted_value": 1.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "49586",
+        "upc": "49586",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack FactoryÂ® verything Pretzel Crisps",
+        "product_price": {
+            "value": "1.99*",
+            "extracted_value": 1.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "49586",
+        "upc": "49586",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Snack Factory",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Snack FactoryÂ® Original Pretzel Crisps",
+        "product_price": {
+            "value": "1.99*",
+            "extracted_value": 1.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "8456465",
+        "upc": "8456465",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stacy's",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Stacy's Mltigrain Baked Pita Chips Snacks",
+        "product_price": {
+            "value": "1.99*",
+            "extracted_value": 1.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "87668195",
+        "upc": "87668195",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stonefire",
+        "product_category_1": [
+            "Snacks"
+        ],
+        "countryOrigin": "CANADA",
+        "product_name": "StonefireÂ® verything Crisps",
+        "product_price": {
+            "value": "1.99*",
+            "extracted_value": 1.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "749569685",
+        "upc": "749569685",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cascadian Farm Organic",
+        "product_category_1": [
+            "Breakfast",
+            "Breakfast"
+        ],
+        "countryOrigin": "",
+        "product_name": "Cascadian Farm Cereal - Organic - Berry Vanilla Pff - 1.5 oz - case of 1",
+        "product_price": {
+            "value": "4.49*",
+            "extracted_value": 4.49,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "31984514",
+        "upc": "31984514",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cascadian Farm Organic",
+        "product_category_1": [
+            "Breakfast",
+            "Breakfast",
+            "Breakfast",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Cascadian Farm Organic Berry Vanilla Pffs Cereal",
+        "product_price": {
+            "value": "4.49*",
+            "extracted_value": 4.49,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "1618517",
+        "upc": "1618517",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cheerios",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Strawberry Banana Cheerios Happy Heart Shapes Large Size Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "1616346",
+        "upc": "1616346",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cheerios",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Apple Cinnamon Cheerios Large Size Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "164879",
+        "upc": "164879",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Chex",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Honey Nt Chex Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "1616367",
+        "upc": "1616367",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cheerios",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Frosted Cheerios Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "164359",
+        "upc": "164359",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cheerios",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Cheerios Giant Size Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "1111936",
+        "upc": "1111936",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Kroger",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "KrogerÂ® nicorn Toaster Treats",
+        "product_price": null
+    },
+    {
+        "product_id": "11118351",
+        "upc": "11118351",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Kroger",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "KrogerÂ® Frosted Toaster Treats Variety Pack",
+        "product_price": null
+    },
+    {
+        "product_id": "3858171",
+        "upc": "3858171",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Pop-Tarts",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "",
+        "product_name": "Pop-Tarts Frosted S'mores Toaster Pastries",
+        "product_price": null
+    },
+    {
+        "product_id": "38316",
+        "upc": "38316",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Pop-Tarts",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Pop-Tarts Cookies and Creme Toaster Pastries",
+        "product_price": null
+    },
+    {
+        "product_id": "386177",
+        "upc": "386177",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Pop-Tarts",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Pop-Tarts Toaster Pastries Variety Pack",
+        "product_price": null
+    },
+    {
+        "product_id": "1648793",
+        "upc": "1648793",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Chex",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Chocolate Chex Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "1618517",
+        "upc": "1618517",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cheerios",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Strawberry Banana Cheerios Happy Heart Shapes Large Size Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "164879",
+        "upc": "164879",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Chex",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Honey Nt Chex Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "1616367",
+        "upc": "1616367",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cheerios",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Frosted Cheerios Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "164359",
+        "upc": "164359",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cheerios",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Cheerios Giant Size Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "8849137699",
+        "upc": "8849137699",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Post",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Post Marshmallow Cocoa Pebblesâ¢ Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "161399",
+        "upc": "161399",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Lcky Charms",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Lcky Charms Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "1649667",
+        "upc": "1649667",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Lcky Charms",
+        "product_category_1": [
+            "Breakfast",
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Lcky Charms Bag Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "16197",
+        "upc": "16197",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Lcky Charms",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Lcky Charms Minis Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "161183",
+        "upc": "161183",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Lcky Charms",
+        "product_category_1": [
+            "Breakfast"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "General Mills Lcky Charms Giant Size Cereal",
+        "product_price": null
+    },
+    {
+        "product_id": "11111116",
+        "upc": "11111116",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Simple Trth",
+        "product_category_1": [
+            "Natral & Organic",
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Simple TrthÂ® Roasted & Salted Cashews",
+        "product_price": null
+    },
+    {
+        "product_id": "111191568",
+        "upc": "111191568",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Simple Trth",
+        "product_category_1": [
+            "Natral & Organic",
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Simple TrthÂ® Roasted & Salted Cashews",
+        "product_price": null
+    },
+    {
+        "product_id": "111191567",
+        "upc": "111191567",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Simple Trth",
+        "product_category_1": [
+            "Natral & Organic",
+            "Snacks"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Simple Trthâ¢ Roasted Peants with Sea Salt",
+        "product_price": null
+    },
+    {
+        "product_id": "89155191",
+        "upc": "89155191",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Foods Alive",
+        "product_category_1": [
+            "Natral & Organic"
+        ],
+        "countryOrigin": "",
+        "product_name": "Foods Alive Organic Globe Trekker Trail Mix",
+        "product_price": null
+    },
+    {
+        "product_id": "8597533",
+        "upc": "8597533",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Mavno Harvest",
+        "product_category_1": [
+            "Natral & Organic",
+            "Snacks"
+        ],
+        "countryOrigin": "",
+        "product_name": "Mavno Harvest Dried Papaya",
+        "product_price": null
+    },
+    {
+        "product_id": "846675371",
+        "upc": "846675371",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Plm Organics",
+        "product_category_1": [
+            "Natral & Organic",
+            "Baby",
+            "Baby",
+            "Baby"
+        ],
+        "countryOrigin": "ITALY",
+        "product_name": "PlmÂ® Organics Little Teethers Bleberry Mltigrain Teething Wafers",
+        "product_price": null
+    },
+    {
+        "product_id": "8185115",
+        "upc": "8185115",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sprot",
+        "product_category_1": [
+            "Baby",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sprot Organic CrlzÂ® Broccoli Baked Toddler Snacks",
+        "product_price": null
+    },
+    {
+        "product_id": "856971",
+        "upc": "856971",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Happy Baby",
+        "product_category_1": [
+            "Baby"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Happy Baby Organics Sperfood Pffs Kale & Spinach Veggie Frit & Grain Pffs",
+        "product_price": null
+    },
+    {
+        "product_id": "8195731648",
+        "upc": "8195731648",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Happy Baby",
+        "product_category_1": [
+            "Baby",
+            "Natral & Organic",
+            "Baby"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Happy BabyÂ® Organic Snackersâ¢ Glten Free Creamy Spinach & Carrot Baked Grain Snack",
+        "product_price": null
+    },
+    {
+        "product_id": "39319",
+        "upc": "39319",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "arth's Best",
+        "product_category_1": [
+            "Baby"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "arth's Best OrganicÂ® Pears & Raspberries Stage  Baby Food",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "4834389",
+        "upc": "4834389",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Snackers Gacamole and Rolled Tortilla Chips",
+        "product_price": null
+    },
+    {
+        "product_id": "481195",
+        "upc": "481195",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Snackers Classic Hmms with Pretzels",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481196",
+        "upc": "481196",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Snackers Roasted Red Pepper Hmms with Pretzels",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "8116573",
+        "upc": "8116573",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Firehook",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Firehook verything Baked Crackers",
+        "product_price": null
+    },
+    {
+        "product_id": "711171854",
+        "upc": "711171854",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Stonemill Kitchens",
+        "product_category_1": [
+            "Deli",
+            "Natral & Organic",
+            "Snacks",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Stonemill Kitchens Chrro Cheesecake Dessert Dip",
+        "product_price": null
+    },
+    {
+        "product_id": "85955711",
+        "upc": "85955711",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Mina",
+        "product_category_1": [
+            "Deli",
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "MOROCCO",
+        "product_name": "Mina Moroccan Pitted Green Olives",
+        "product_price": null
+    },
+    {
+        "product_id": "7534488",
+        "upc": "7534488",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Mir Glen Organic",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Mir Glenâ¢ Organic Garlic Cilantro Salsa",
+        "product_price": null
+    },
+    {
+        "product_id": "44115431",
+        "upc": "44115431",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Cedar's",
+        "product_category_1": [
+            "Deli",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Cedar's Foods Topped Hot Honey Homms",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": {
+            "value": "4.99*",
+            "extracted_value": 4.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": {
+            "value": "4.99*",
+            "extracted_value": 4.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": {
+            "value": "4.99*",
+            "extracted_value": 4.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": {
+            "value": "4.99*",
+            "extracted_value": 4.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": null
+    },
+    {
+        "product_id": "481174",
+        "upc": "481174",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Pine Nt Hmms",
+        "product_price": {
+            "value": "3.99*",
+            "extracted_value": 3.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "481154",
+        "upc": "481154",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Red Pepper Hmms",
+        "product_price": {
+            "value": "3.99*",
+            "extracted_value": 3.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "48114",
+        "upc": "48114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Roasted Garlic Hmms",
+        "product_price": {
+            "value": "3.99*",
+            "extracted_value": 3.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "481114",
+        "upc": "481114",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Sabra",
+        "product_category_1": [
+            "Deli"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Sabra Classic Hmms",
+        "product_price": {
+            "value": "3.99*",
+            "extracted_value": 3.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "4483441",
+        "upc": "4483441",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again nsweetened & Roasted Salt Free Creamy Almond Btter",
+        "product_price": {
+            "value": "17.*",
+            "extracted_value": 17.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "44853461",
+        "upc": "44853461",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again Organic nsweetened & Lightly Toasted Salt Free Creamy Almond Btter",
+        "product_price": {
+            "value": "17.*",
+            "extracted_value": 17.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846487",
+        "upc": "851846487",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Pmpkin Seed Btter",
+        "product_price": {
+            "value": "6.5*",
+            "extracted_value": 26.5,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846475",
+        "upc": "851846475",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": {
+            "value": "6.5*",
+            "extracted_value": 26.5,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "9496499",
+        "upc": "9496499",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Barney Btter",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Barney BtterÂ® Crnchy Almond Btter",
+        "product_price": {
+            "value": "6.5*",
+            "extracted_value": 26.5,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "448511",
+        "upc": "448511",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again Lightly Sweetened Crnchy Peant Btter",
+        "product_price": {
+            "value": "6.5*",
+            "extracted_value": 26.5,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "89445537",
+        "upc": "89445537",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Jstin'sÂ® Vanilla Almond Btter",
+        "product_price": {
+            "value": "6.5*",
+            "extracted_value": 26.5,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846475",
+        "upc": "851846475",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": {
+            "value": "5.97*",
+            "extracted_value": 25.97,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "9496499",
+        "upc": "9496499",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Barney Btter",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Barney BtterÂ® Crnchy Almond Btter",
+        "product_price": {
+            "value": "5.97*",
+            "extracted_value": 25.97,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846474",
+        "upc": "851846474",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": {
+            "value": "5.97*",
+            "extracted_value": 25.97,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "8944553",
+        "upc": "8944553",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Jstin'sÂ® Maple Almond Btter",
+        "product_price": {
+            "value": "5.97*",
+            "extracted_value": 25.97,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "89445531",
+        "upc": "89445531",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Jstin'sÂ® Classic Almond Btter",
+        "product_price": {
+            "value": "5.97*",
+            "extracted_value": 25.97,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "7461556139",
+        "upc": "7461556139",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Woodstock",
+        "product_category_1": [
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Woodstock nsalted Non-GMO Crnchy Dry Roasted Almond Btter - Case of 1 - 16 oz.",
+        "product_price": {
+            "value": "7.95*",
+            "extracted_value": 7.95,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "169381534",
+        "upc": "169381534",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Woodstock",
+        "product_category_1": [
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Woodstock nsalted Non-GMO Crnchy Dry Roasted Almond Btter - Case of 1 - 16 OZ",
+        "product_price": {
+            "value": "7.95*",
+            "extracted_value": 7.95,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "4483441",
+        "upc": "4483441",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again nsweetened & Roasted Salt Free Creamy Almond Btter",
+        "product_price": {
+            "value": "7.*",
+            "extracted_value": 7.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "44853461",
+        "upc": "44853461",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again Organic nsweetened & Lightly Toasted Salt Free Creamy Almond Btter",
+        "product_price": {
+            "value": "7.*",
+            "extracted_value": 7.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "7461556139",
+        "upc": "7461556139",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Woodstock",
+        "product_category_1": [
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Woodstock nsalted Non-GMO Crnchy Dry Roasted Almond Btter - Case of 1 - 16 oz.",
+        "product_price": {
+            "value": "56.98*",
+            "extracted_value": 56.98,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "169381534",
+        "upc": "169381534",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Woodstock",
+        "product_category_1": [
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Woodstock nsalted Non-GMO Crnchy Dry Roasted Almond Btter - Case of 1 - 16 OZ",
+        "product_price": {
+            "value": "56.98*",
+            "extracted_value": 56.98,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846487",
+        "upc": "851846487",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Pmpkin Seed Btter",
+        "product_price": {
+            "value": "64.98*",
+            "extracted_value": 64.98,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "9496499",
+        "upc": "9496499",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Barney Btter",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Barney BtterÂ® Crnchy Almond Btter",
+        "product_price": {
+            "value": "64.98*",
+            "extracted_value": 64.98,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "448511",
+        "upc": "448511",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again Lightly Sweetened Crnchy Peant Btter",
+        "product_price": {
+            "value": "64.98*",
+            "extracted_value": 64.98,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846481",
+        "upc": "851846481",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": {
+            "value": "64.98*",
+            "extracted_value": 64.98,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "89445537",
+        "upc": "89445537",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Jstin'sÂ® Vanilla Almond Btter",
+        "product_price": {
+            "value": "64.98*",
+            "extracted_value": 64.98,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "448341",
+        "upc": "448341",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again nsweetened & Roasted Salt Free Crnchy Almond Btter",
+        "product_price": {
+            "value": "15.*",
+            "extracted_value": 15.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846475",
+        "upc": "851846475",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "851846474",
+        "upc": "851846474",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "9496499",
+        "upc": "9496499",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Barney Btter",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Barney BtterÂ® Crnchy Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "8944553",
+        "upc": "8944553",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Jstin'sÂ® Maple Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "89445531",
+        "upc": "89445531",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Jstin'sÂ® Classic Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "851846487",
+        "upc": "851846487",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Pmpkin Seed Btter",
+        "product_price": {
+            "value": "34.*",
+            "extracted_value": 34.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846475",
+        "upc": "851846475",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": {
+            "value": "34.*",
+            "extracted_value": 34.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "9496499",
+        "upc": "9496499",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Barney Btter",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Barney BtterÂ® Crnchy Almond Btter",
+        "product_price": {
+            "value": "34.*",
+            "extracted_value": 34.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "448511",
+        "upc": "448511",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again Lightly Sweetened Crnchy Peant Btter",
+        "product_price": {
+            "value": "34.*",
+            "extracted_value": 34.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "89445537",
+        "upc": "89445537",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Jstin'sÂ® Vanilla Almond Btter",
+        "product_price": {
+            "value": "34.*",
+            "extracted_value": 34.0,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "73313345",
+        "upc": "73313345",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "La Banderita",
+        "product_category_1": [
+            "Bakery"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "La Banderita Carb Conter Qeso & Jalapeno Tortillas",
+        "product_price": null
+    },
+    {
+        "product_id": "733133",
+        "upc": "733133",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "La Banderita",
+        "product_category_1": [
+            "Bakery",
+            "International"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "La Banderita Low Carb Keto Friendly Carb Conter Large Tortilla",
+        "product_price": null
+    },
+    {
+        "product_id": "73313",
+        "upc": "73313",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Ole",
+        "product_category_1": [
+            "Bakery",
+            "International"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "OlÃ© Xtreme Wellness Keto Friendly Carb Lean Spinach & Herbs Tortillas",
+        "product_price": null
+    },
+    {
+        "product_id": "7373111",
+        "upc": "7373111",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Mission",
+        "product_category_1": [
+            "International",
+            "Bakery"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "MissionÂ® Carb BalanceÂ® Low Carb Whole Wheat Soft Taco Tortillas",
+        "product_price": null
+    },
+    {
+        "product_id": "733131",
+        "upc": "733131",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Ole",
+        "product_category_1": [
+            "Bakery"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "OlÃ© Xtreme Wellness Keto Friendly Carb Lean High Fiber Tortillas",
+        "product_price": null
+    },
+    {
+        "product_id": "851846475",
+        "upc": "851846475",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "851846483",
+        "upc": "851846483",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Brazil Nt Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "111113",
+        "upc": "111113",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Simple Trth Organic",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Simple Trth Organicâ¢ Original Powdered Peant Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "89445537",
+        "upc": "89445537",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Jstin'sÂ® Vanilla Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "1111374",
+        "upc": "1111374",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Simple Trth",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Simple TrthÂ® No Stir Almond Btter Poch BIG Deal!",
+        "product_price": null
+    },
+    {
+        "product_id": "851846487",
+        "upc": "851846487",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Pmpkin Seed Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "9496499",
+        "upc": "9496499",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Barney Btter",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Barney BtterÂ® Crnchy Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "448511",
+        "upc": "448511",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again Lightly Sweetened Crnchy Peant Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "851846481",
+        "upc": "851846481",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "89445537",
+        "upc": "89445537",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Jstin'sÂ® Vanilla Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "44831",
+        "upc": "44831",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again Organic Salt Free Crnchy Peant Btter",
+        "product_price": {
+            "value": ".99*",
+            "extracted_value": 22.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "9496499",
+        "upc": "9496499",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Barney Btter",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Barney BtterÂ® Crnchy Almond Btter",
+        "product_price": {
+            "value": ".99*",
+            "extracted_value": 22.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "853547377",
+        "upc": "853547377",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Wild Friends",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Wild Friendsâ¢ Classic Creamy Almond Btter",
+        "product_price": {
+            "value": ".99*",
+            "extracted_value": 22.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846483",
+        "upc": "851846483",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Brazil Nt Btter",
+        "product_price": {
+            "value": ".99*",
+            "extracted_value": 22.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "448511",
+        "upc": "448511",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Once Again",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Once Again Lightly Sweetened Crnchy Peant Btter",
+        "product_price": {
+            "value": ".99*",
+            "extracted_value": 22.99,
+            "currency": ""
+        }
+    },
+    {
+        "product_id": "851846475",
+        "upc": "851846475",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "851846474",
+        "upc": "851846474",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Dastony",
+        "product_category_1": [
+            "Condiment & Saces",
+            "Natral & Organic"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Dastony Organic Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "9496499",
+        "upc": "9496499",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Barney Btter",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Barney BtterÂ® Crnchy Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "8944553",
+        "upc": "8944553",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "",
+        "product_name": "Jstin'sÂ® Maple Almond Btter",
+        "product_price": null
+    },
+    {
+        "product_id": "89445531",
+        "upc": "89445531",
+        "product_brand_1": "Kroger",
+        "product_brand_2": "Jstin's",
+        "product_category_1": [
+            "Natral & Organic",
+            "Condiment & Saces"
+        ],
+        "countryOrigin": "NITD STATS",
+        "product_name": "Jstin'sÂ® Classic Almond Btter",
+        "product_price": null
+    }
+]
