@@ -1,9 +1,13 @@
+from dotenv import load_dotenv, find_dotenv
 from serpapi import GoogleSearch
 import os
 import json
 import datetime
 import glob
 from dotenv import load_dotenv
+
+load_dotenv(find_dotenv())
+SERP_API_KEY = os.getenv('SERP_API_KEY')
 
 # Directory to store URLs
 dirname = os.path.dirname(__file__)
@@ -41,7 +45,7 @@ def main():
         google_reverse_image_data[f"results for image {index}"] = {}
 
         params = {
-            "api_key": "635b7526a4291ddec12eba9c3bdad8c7fdacf6ea91fad10e3b3c93add91aee7c", # https://serpapi.com/manage-api-key
+            "api_key": SERP_API_KEY, # https://serpapi.com/manage-api-key
             "engine": "google_lens",   # SerpApi search engine
             "url": image_url,             # image URL to perform a reverse search
             "hl": "en",                         # language of the search

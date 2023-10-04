@@ -309,7 +309,7 @@ def main():
                     "store_location_state": store_info["location"].get("province_code", ""),
                     "store_location_city": store_info["location"].get("city", ""),
                     "store_id": store_info["location"].get("store_id", ""),
-                    "in_stock": toggle_in_stock(product_result.get("out_of_stock", ""))
+                    "in_stock": toggle_in_stock(result.get("out_of_stock", ""))
                 })
         except Exception as e:
             traceback.print_exc()

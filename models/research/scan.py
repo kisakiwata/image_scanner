@@ -25,6 +25,18 @@ from st_aggrid import GridOptionsBuilder, AgGrid, GridUpdateMode, DataReturnMode
 from pyzipcode import ZipCodeDatabase
 import os
 
+# Create a flag to track whether the code has already been executed
+code_executed = False
+
+# Function to run the code
+def run_code_once():
+    global code_executed  # Use the global flag
+    if not code_executed:
+        #st.write("Running the code...")
+        # Your code here
+        subprocess.run("python models/research/process.py", shell=True)
+        code_executed = True
+
 
 # page config
 st.set_page_config(page_title="Home", layout="wide", initial_sidebar_state="expanded")
@@ -41,8 +53,6 @@ dirname = os.path.dirname(__file__)
 style_file = os.path.join(dirname,'style/style.css')
 print(style_file)
 local_css(style_file)
-
-
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -79,7 +89,14 @@ if uploaded_file is not None:
         st.image(uploaded_file, caption=None, width=1200, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 # run the inference and web scraping with this
-subprocess.run("python models/research/process.py", shell=True)
+
+# Create a button
+button_clicked = st.button("Ready to scan the image?")
+
+# Check if the button is clicked
+if button_clicked:
+    run_code_once()
+    st.write("Products getting identified...")
 
 # Display JSON
 st.subheader("Product Information")
@@ -89,7 +106,6 @@ json_data = retrieve_json(json_directory)
 
 # Dataframe
 df = pd.DataFrame(json_data)
-cols = df.columns
 if not df.empty:
     new_cols = ['product_id','product_name',  'in_stock', 'product_brand_1', 'product_brand_2',
         'product_category_1', 'product_category_2', 'product_category_3',
@@ -98,8 +114,10 @@ if not df.empty:
         'store_location_zipcode', 'store_location_state', 'store_location_city',
         'store_id', 'product_link', 'brand_link', 'inventory_stockLevel',
         'tcin']
-    df = df[new_cols]
+    selected_cols = [col for col in new_cols if col in df.columns]
+    df = df[selected_cols]
     df = df.rename(columns={'product_brand_1': 'retail', 'product_brand_2': 'brand'})
+    df = df.drop_duplicates(subset=["product_id"])
     selected_options = st.multiselect("Filter by retail", list(set(df["retail"]))) #, default=specific_source
 
     # Filter the original DataFrame to only include rows with the selected colors
