@@ -1,5 +1,6 @@
 import sys
 import subprocess
+import time
 
 # as inference.py requires protobuf==3.19.*, now force reinstalling the updated version
 #subprocess.run("pip install --upgrade --force-reinstall protobuf", shell=True)
@@ -93,10 +94,23 @@ if uploaded_file is not None:
 # Create a button
 button_clicked = st.button("Ready to scan the image?")
 
+# with st.status("Identifying product images...", expanded=True) as status:
+#     st.write("Searching for product information...")
+#     time.sleep(2)
+#     st.write("Found information.")
+#     time.sleep(1)
+#     st.write("Organizing data into the formats...")
+#     time.sleep(1)
+#     status.update(label="Download complete!", state="complete", expanded=False)
+
 # Check if the button is clicked
 if button_clicked:
     run_code_once()
     st.write("Products getting identified...")
+
+    with st.spinner('Wait for it...'):
+        time.sleep(5)
+        st.success('Done!')
 
 # Display JSON
 st.subheader("Product Information")
