@@ -35,7 +35,7 @@ def run_code_once():
     if not code_executed:
         #st.write("Running the code...")
         # Your code here
-        subprocess.run("python models/research/process.py", shell=True)
+        subprocess.run(["venv-vision/bin/python3", "models/research/process.py"])
         code_executed = True
 
 
@@ -94,21 +94,12 @@ if uploaded_file is not None:
 # Create a button
 button_clicked = st.button("Ready to scan the image?")
 
-# with st.status("Identifying product images...", expanded=True) as status:
-#     st.write("Searching for product information...")
-#     time.sleep(2)
-#     st.write("Found information.")
-#     time.sleep(1)
-#     st.write("Organizing data into the formats...")
-#     time.sleep(1)
-#     status.update(label="Download complete!", state="complete", expanded=False)
-
 # Check if the button is clicked
 if button_clicked:
     run_code_once()
     st.write("Products getting identified...")
 
-    with st.spinner('Wait for it...'):
+    with st.spinner('Detecting the products and finding the information...'):
         time.sleep(5)
         st.success('Done!')
 
@@ -151,30 +142,3 @@ if not df.empty:
     fit_columns_on_grid_load=False,)
 else:
     st.write("No data found")
-
-#st.subheader("Filtered Data")
-
-#else:
-    #st.write("No data found for the selected options:", selected_options)
-
-# # ---- CONTACT ----
-# with st.container():
-#     st.write("---")
-#     st.header("Contact us")
-#     st.write("##")
-
-#     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
-#     contact_form = """
-#     <form action="https://formsubmit.co/watanabekisaki@gmail.com" method="POST">
-#         <input type="hidden" name="_captcha" value="false">
-#         <input type="text" name="name" placeholder="Your name" required>
-#         <input type="email" name="email" placeholder="Your email" required>
-#         <textarea name="message" placeholder="Your message here" required></textarea>
-#         <button type="submit">Send</button>
-#     </form>
-#     """
-#     left_column, right_column = st.columns(2)
-#     with left_column:
-#         st.markdown(contact_form, unsafe_allow_html=True)
-#     with right_column:
-#         st.empty()
