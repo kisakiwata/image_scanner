@@ -1,6 +1,6 @@
-import pip
+#import pip
 
-pip.main(['install', 'protobuf==3.19.0'])
+#pip.main(['install', 'protobuf==3.19.0'])
 
 import numpy as np
 import os
@@ -89,15 +89,19 @@ def show_inference(model, image_path, dir):
   filename = os.path.basename(image_path).split(".")[0]
   image = cv2.imread(str(image_path))
   image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+  if image is not None:
+    print(True)
   (frame_height, frame_width) = image.shape[:2]
   tensor_img= tf.convert_to_tensor(image_np, dtype=tf.float32)
+  if tensor_img is not None:
+    print(True)
 
   display_str = []
   boxes = output_dict['detection_boxes']
   scores = output_dict['detection_scores']
   classes = output_dict['detection_classes']
   for i in range(len(boxes)): #min(max_boxes_to_draw, boxes.shape[0])
-      if (scores[i] > .45) & (boxes[i] is not None):
+      if (scores[i] > .2) & (boxes[i] is not None):
           display_str.append(boxes[i])
           
           if boxes[i] is not None:
@@ -109,8 +113,9 @@ def show_inference(model, image_path, dir):
             cropped_img = tf.image.crop_to_bounding_box(tensor_img, ymin, xmin, ymax - ymin, xmax - xmin)
 
             img_name = r"{}/{}_imag{}.jpg".format(dir, filename, i)
-
+            print(img_name)
             final_img = cv2.resize(np.array(cropped_img), (800, 600), interpolation = cv2.INTER_CUBIC)
+            print(final_img)
             im_bgr = cv2.cvtColor(final_img, cv2.COLOR_RGB2BGR)
 
             if not cv2.imwrite(img_name, im_bgr):
@@ -122,6 +127,20 @@ def show_inference(model, image_path, dir):
 
   # display(Image.fromarray(image_np))
 
+def find_most_recent_files(image_folder):
+    all_files = [os.path.join(image_folder, filename) for filename in os.listdir(image_folder)]
+    
+    if not all_files:
+        return []  # No files found in the directory
+
+    # Get the maximum timestamp among all files
+    max_timestamp = max(os.path.getctime(file_path) for file_path in all_files)
+
+    # Find all files with the maximum timestamp
+    most_recent_files = [file_path for file_path in all_files if os.path.getctime(file_path) == max_timestamp]
+
+    return most_recent_files
+
 
 # put these in args
 model_name = 'efficientdet_d0_coco17_tpu-32'
@@ -131,24 +150,31 @@ detection_model = load_model(model_name)
 dirname = os.path.dirname(__file__)
 image_directory = os.path.join(dirname,'images')
 
-PATH_TO_TEST_IMAGES_DIR = pathlib.Path(image_directory)#r'/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/object_detection/test_images
-types = ('*.jpg', '*.jpeg', '*.png')
-files_grabbed = []
-for files in types:
-    files_grabbed.extend(PATH_TO_TEST_IMAGES_DIR.glob(files))
-TEST_IMAGE_PATHS = sorted(files_grabbed)
+# PATH_TO_TEST_IMAGES_DIR = pathlib.Path(image_directory)#r'/Users/kisaki/Desktop/Kisaki_Personal_Folder/fast_api_sandbox/models/research/object_detection/test_images
+# types = ('*.jpg', '*.jpeg', '*.png')
+# files_grabbed = []
+# for files in types:
+#     files_grabbed.extend(PATH_TO_TEST_IMAGES_DIR.glob(files))
+# TEST_IMAGE_PATHS = sorted(files_grabbed)
 
-# create output folder for each inference timing
-# Define the directory where you want to save the JSON file
-save_directory = os.path.join(dirname,'inference_output')
-os.makedirs(save_directory, exist_ok=True)
+
 #date = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
 # save_dir_output = os.path.join(dirname,'inference_output', "output_{}".format(date))
 # os.makedirs(save_dir_output, exist_ok=True)
 
-def main(detection_model = detection_model, TEST_IMAGE_PATHS = TEST_IMAGE_PATHS):
+if __name__ == '__main__':
+  #def main(detection_model = detection_model, TEST_IMAGE_PATHS = TEST_IMAGE_PATHS):
+  TEST_IMAGE_PATHS = find_most_recent_files(image_directory)
+
+  if TEST_IMAGE_PATHS:
+      print("Most recent files:")
+      for file_path in TEST_IMAGE_PATHS:
+          print(file_path)
+
+# create output folder for each inference timing
+# Define the directory where you want to save the JSON file
+  save_directory = os.path.join(dirname,'inference_output')
+  os.makedirs(save_directory, exist_ok=True)
   for image_path in TEST_IMAGE_PATHS:
     show_inference(detection_model, image_path, dir=save_directory)
-
-if __name__ == '__main__':
-  main()
+  #main()
