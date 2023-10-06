@@ -3,8 +3,10 @@ import json
 import os
 from glob import glob
 from datetime import datetime, timedelta, timezone
+import sys
+import subprocess
 
-# Sample authentication object
+# authentication object to check if there was access token issued within 18 minutes
 class Authentication:
     def __init__(self, json_directory):
         self.json_directory = json_directory
@@ -40,6 +42,26 @@ class Authentication:
             except json.JSONDecodeError:
                 return None  # Failed to decode JSON
 
+# create kroger access token
+dirname = os.path.dirname(__file__)
+kroger_path = os.path.join(dirname,'kroger_authorization.py')
+
+# Run the script using subprocess
+try:
+    subprocess.run(["python", kroger_path], check=True)
+except subprocess.CalledProcessError as e:
+    print(f"Error running the script: {e}")
+
+# get access token
+# Specify the directory where JSON files are stored
+json_directory_token = os.path.join(dirname,'token')
+
+# Create an instance of the Authentication class
+auth = Authentication(json_directory_token)
+
+# Call the get_access_token method to retrieve the access token
+kroger_access_token = auth.get_access_token()
+
 # Specify the directory where JSON files are stored
 dirname = os.path.dirname(__file__)
 json_directory = os.path.join(dirname,'token')
@@ -55,8 +77,8 @@ if access_token is not None:
 else:
     print("No valid access token found within the last 18 minutes.")
 
-def location_on_click():
-    zip_code = input("Enter Zip Code: ")  # Assuming you get the Zip Code as user input
+def location_on_click(zip_code):
+    #zip_code = input("Enter Zip Code: ")  # Assuming you get the Zip Code as user input
     access_token = auth.get_access_token()  # Assuming you have a method to get the access token
     locations = get_locations(zip_code, access_token)
     if locations:
@@ -108,4 +130,14 @@ filename = os.path.join(save_directory, "location_{}.json".format(date))
 
 
 if __name__ == "__main__":
-    location_on_click()
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <zip_code>")
+        sys.exit(1)
+
+    zip_code = sys.argv[1]
+    location_on_click(zip_code)
+
+
+
+
+
