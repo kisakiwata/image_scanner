@@ -28,7 +28,7 @@ Please see below for the flow:
   - Upload these results into Walmart, Kroger, and Target APIs to gain further details with specific geolocation (e.g. prices, sizes)
     
 ## 5. Finally, put that information into a data frame accessible to users
-  - With the help of Streamlist, I display the detected results as a data frame.
+  - With the help of Streamlist, I display the detected results as a data frame. ```streamlit run models/research/scan.py```
   - You can see the results here as well: (https://image-scanner-demo.streamlit.app/)
   - Feel free to play around with the Streamlit io and let me know your feedback!
   - As the app is not interactive because of the repo retrieval, you can also refer to this demo video [here](https://www.loom.com/share/8e80bad453f341399f0837dd8e88cc62?sid=66043d0d-389c-43ac-9f75-d86af1dcca76)
