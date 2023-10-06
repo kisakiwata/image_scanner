@@ -89,7 +89,7 @@ button_clicked = st.button("Ready to scan the image?")
 
 # Check if the button is clicked
 if button_clicked:
-    run_code_once()
+    #run_code_once()
     subprocess.run([f"{sys.executable}", "models/research/helper_function.py", f"{location}"])
     st.write("Products getting identified...")
 
