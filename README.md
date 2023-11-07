@@ -13,8 +13,7 @@ Please see below for the flow:
   - Object Detection *(efficientdet) was used to identify objects inside a picture and crop bounding boxes surrounding each object.
   - You can tune the confidence threshold to modify the accuracy of the model, depending on the needs of the use case.
   - Sample pictures;
-![hope-hummus1](https://github.com/kisakiwata/image_scanner/assets/46466783/63a62ece-69db-4eb0-abee-ac8d6eb5741d)
-![sample1](https://github.com/kisakiwata/image_scanner/assets/46466783/31eb1d01-9b59-454d-9438-478c29a3b41c)
+![hope-hummus1](![hope-hummus1](https://github.com/kisakiwata/image_scanner/assets/46466783/1cf8f7d0-3009-4152-9b25-e6bbde6f0d26)
 
 * see details on efficient det model [here](https://github.com/google/automl/tree/master/efficientdet)
 
